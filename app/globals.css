@@ -7,8 +7,8 @@
 }
 
 body {
-  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background: #f5f7fb;
+  font-family: "Quicksand", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #ffffff;
   color: #111827;
   padding: 40px;
 }
@@ -19,35 +19,60 @@ body {
 }
 
 header h1 {
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 6px;
+  font-family: Quicksand;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 44px;
+  line-height: 100%;
+  letter-spacing: 0%;
+
 }
 
 header h1 span {
-  color: #f45b39;
+  color: #EF4822;
 }
 
 header p {
-  color: #6b7280;
-  font-size: 14px;
+  width: 722;
+  height: 24;
+  opacity: 1;
+  top: 237px;
+  left: 150px;
+
+
+  font-family: Poppins;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #000000;
+  margin-top: 24px;
 }
 
 /* Tabs bar */
 
 .tabs-bar {
+  width: 1140;
+  height: 44;
+  opacity: 1;
+  top: 293px;
+  left: 150px;
+  border-radius: 10px;
+  background: #EBF6FF;
+  
+
   margin-top: 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #e8f2ff;
-  border-radius: 999px;
   padding: 4px 12px;
 }
 
 .tabs {
   display: flex;
-  gap: 8px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
@@ -57,12 +82,27 @@ header p {
   padding: 8px 18px;
   border-radius: 999px;
   font-size: 14px;
-  color: #4b5563;
+  color: #000000;
   cursor: pointer;
+  opacity: 1;
+  letter-spacing: 0;
+  line-height: 100%;
+  vertical-align: middle;
+  text-decoration: solid;
 }
 
 .tab-btn.active {
-  background: #003f8f;
+  background: #002C59;
+  width: flex;
+  height: 44;
+  letter-spacing: 0;
+  line-height: 100%;
+  opacity: 1;
+  top: 293px;
+  left: 251px;
+  border-radius: 10px;
+  vertical-align: middle;
+  text-decoration: solid;
   color: #ffffff;
 }
 
@@ -72,7 +112,7 @@ header p {
   gap: 6px;
   padding: 8px 14px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.85);
+  background: #EBF6FF;
   border: none;
   font-size: 14px;
   color: #111827;
@@ -80,35 +120,52 @@ header p {
   white-space: nowrap;
 }
 
-.filters-icon {
+/* .filters-icon {
   width: 0;
   height: 0;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
   border-top: 7px solid #111827;
-}
+} */
 
 /* Main layout */
 
 .main {
+
   margin-top: 32px;
   display: grid;
   grid-template-columns: 2fr 1.3fr;
   gap: 24px;
   align-items: flex-start;
+
+  width: 1140;
+  height: 396;
+  top: 437px;
+  left: 150px;
+  border-width: 1px;
+  border-width: 0px, 0px, 0px, 0px;
 }
 
 .date-heading {
-  font-weight: 600;
-  font-size: 20px;
-  margin-bottom: 16px;
+  width: 176;
+  height: 36;
+  top: 369px;
+  left: 150px;
+
+  font-family: Poppins;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+
+  margin-bottom: 24px;
 }
 
 .event-card {
   background: #ffffff;
   border-radius: 16px;
-  padding: 10px 0 0;
-  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
   overflow: hidden;
 }
 
@@ -122,13 +179,29 @@ header p {
 }
 
 .event-header {
+  width: 690;
+  height: 44;
+  top: 437px;
+  left: 150px;
+  opacity: 1;
+  border-radius: 10px;
+
   font-weight: 600;
-  color: #6b7280;
-  background: #f3f4f6;
+  color: #000000;
+  background: #f5f5f5;
+
+  font-family: Poppins;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+
 }
 
 .event-row:not(:last-child) {
-  border-bottom: 1px solid #f3f4f6;
+  border-bottom: 1px solid #E1E6E8
 }
 
 .country {
@@ -147,10 +220,15 @@ header p {
 /* Calendar */
 
 .calendar-card {
-  background: #ffffff;
+  width: 426;
+  height: 396;
+  opacity: 1;
+  top: 437px;
+  left: 864px;
   border-radius: 16px;
-  padding: 18px;
-  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+  padding: 24px;
+  gap: 8px;
+  background: #f5f5f5;
 }
 
 .calendar-header {
@@ -161,16 +239,21 @@ header p {
 }
 
 .icon-btn {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
+  width: 44;
+  height: 44;
+  left: 33px;
+  border-radius: 80px;
+  box-shadow: 0px 1px 1px 0px #000E330D;
+
+
   border: none;
-  background: #f3f4f6;
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
+  font-size: 48px;
   cursor: pointer;
+  vertical-align:auto;
 }
 
 .month-year {
@@ -180,19 +263,34 @@ header p {
 }
 
 .select-like {
+
+  width: 92;
+  height: 44;
+  border-width: 2px;
+  border-radius: 6px;
+  gap: 10px;
+  padding-top: 10px;
+  padding-right: 12px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  box-shadow: 0px 1px 1px 0px #000E330D;
+  border: 2px solid #0047FF;
+
   position: relative;
-  border-radius: 8px;
-  border: 1.5px solid #2563eb;
-  padding: 6px 10px;
-  font-size: 14px;
+
+  font-family: "quicksand", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size:larger black ;
+  /* font-weight: 800; */
+  font-size-adjust: inherit;
+  text-align: center;
   cursor: pointer;
-  min-width: 80px;
   background: #ffffff;
 }
 
 .select-like.year {
   border-color: #e5e7eb;
   min-width: 72px;
+  font-weight: 800;
 }
 
 .dropdown {
@@ -239,17 +337,56 @@ header p {
 
 .calendar-grid-header span {
   font-weight: 600;
-  color: #9ca3af;
+  color: #000000;
+  font-family: Poppins;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+
 }
 
 .calendar-day {
+  width: 50;
+  height: 44;
+  opacity: 1;
+  left: 2px;
+  border-radius: 6px;
+  gap: 10px;
+  padding-top: 13px;
+  padding-right: 20px;
+  padding-bottom: 13px;
+  padding-left: 20px;
+  box-shadow: 0px 1px 1px 0px #000E330D;
+  background: #ffffff;
+  cursor: pointer;
   padding: 8px 0;
   border-radius: 8px;
-  font-size: 13px;
+  /* font-size: 13px; */
+  font-family: Poppins;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+
+
 }
 
 .calendar-day.muted {
-  color: #d1d5db;
+  font-family: Poppins;
+  color: #b3b3b3;
+  font-style: Medium;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  background: #f5f5f5;
 }
 
 .calendar-day.active {
@@ -273,4 +410,49 @@ header p {
     align-items: flex-start;
     gap: 10px;
   }
+}
+
+/* Only the visible header month */
+.select-like {
+  font-weight: 800;
+}
+
+/* Only the header year */
+.select-like.year {
+  font-weight: 800;
+}
+
+/* All items in the dropdown: normal weight */
+.dropdown li {
+  font-weight: 400;
+}
+
+/* The selected month inside dropdown (April): blue but not too bold */
+.dropdown li.active {
+  color: #2563eb;
+  font-weight: 500;
+}
+
+/* Exact Figma Funnel Icon */
+.filters-icon {
+  width: 0;
+  height: 0;
+  border-top: 12px solid #002C59;         /* dark navy color (same as your text) */
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  position: relative;
+  top: 1px;
+  margin-right: 6px;
+}
+
+.filters-icon::after {
+  content: "";
+  position: absolute;
+  top: -1px;                               /* positions stem perfectly */
+  left: -1px;
+
+  width: 2px;
+  height: 8px;
+  background: #002C59;                    /* same color as top */
+  /* border-radius: 2px;                     smooth edges like Figma  */
 }
